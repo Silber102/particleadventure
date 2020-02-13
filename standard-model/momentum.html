@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<META HTTP-EQUIV="EXPIRES" CONTENT="Sun, 01 Jan 2006 12:00:01 GMT">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<meta charset="utf-8">
+<title>Particle Adventure - Momentum</title>
+<link href="../css/style-new.css" rel="stylesheet" type="text/css"  />
+<script language="JavaScript">
+function setVisibility(id) {
+if(document.getElementById('bt1').value=='Hide Layer'){
+document.getElementById('bt1').value = 'Show Layer';
+document.getElementById(id).style.display = 'none';
+}else{
+document.getElementById('bt1').value = 'Hide Layer';
+document.getElementById(id).style.display = 'inline';
+}
+}
+</script>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="jquery1.min.js"></script>
+<script src="accord1.js" type="text/javascript"></script>
+<link rel="stylesheet" href="accord1.css" type="text/css" media="screen">
+<script type="text/javascript" src="../modal/lib/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../modal/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="../modal/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+
+<script type="text/javascript">
+<!--
+function toggle(id) {
+var e = document.getElementById(id);
+if(e.style.display == 'none')
+e.style.display = 'block';
+else
+e.style.display = 'none';
+}
+//-->
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+    <div class="header">
+       
+        <div class="clear"></div>
+    </div>
+   
+    <div class="content">
+        <div class="blog">
+            <div class="blog-content">
+            <span style="font-weight:bold;"></span>
+        <div class="blog-img"><img src="../images/magelec.jpg" width="150" align="right"></div>
+          <p>
+<td valign="top">
+
+<p>In order to find out things about particles, physicists measure their <span style="font-weight:bold;">charge</span>
+and <span style="font-weight:bold;">momentum</span>. To do this they observe particle collisions in strong magnetic fields,
+because different kinds of particles behave very differently in a magnetic field depending on
+their charge and their momentum.
+
+<p>For one thing, the signs of charged particles
+can easily be read from their paths, since they curve in opposite directions in the same
+magnetic field.
+<BR clear="all">
+<p>
+<img src="../images/magmom.jpg" ALIGN="right" width="50%"><p>For another, the momenta of particles can be
+calculated easily because the path of a particle with greater momentum bends less than that
+of one with lesser momentum. 
+</p>
+	
+<br />
+	<div align="center">
+    <form><input type=button value="Return to page" onClick="self.close();"></form>
+ 	</div>
+        </div>
+        
+    </div>
+<div class="footer">
+    <p>&copy; 1996-2014 <a href="http://www.particleadventure.org">particleadventure.org</a></p>
+</div>
+    <p class="author"></p>
+
+<script type="text/javascript">
+	$('.nav').hide();
+	$('#show').click(function (){
+		$(".nav").toggle();
+		$("span").toggle();
+	});
+</script>
+<script  src="jquery2.min.js" style='display: none;'>var __links = document.querySelectorAll('a');function __linkClick(e) { parent.window.postMessage(this.href, '*');} ;for (var i = 0, l = __links.length; i < l; i++) {if ( __links[i].getAttribute('target') == '_blank' ) { __links[i].addEventListener('click', __linkClick, false);}}</script>
+
+<script>var headers = ["H1","H2","H3","H4","H5","H6"];
+
+$(".accordion").click(function(e) {
+  var target = e.target,
+      name = target.nodeName.toUpperCase();
+  
+  if($.inArray(name,headers) > -1) {
+    var subItem = $(target).next();
+    
+    //slideUp all elements (except target) at current depth or greater
+    var depth = $(subItem).parents().length;
+    var allAtDepth = $(".accordion p, .accordion div").filter(function() {
+      if($(this).parents().length >= depth && this !== subItem.get(0)) {
+        return true; 
+      }
+    });
+    $(allAtDepth).slideUp("fast");
+    
+    //slideToggle target content and adjust bottom border if necessary
+    subItem.slideToggle("fast",function() {
+        $(".accordion :visible:last").css("border-radius","0 0 10px 10px");
+    });
+    $(target).css({"border-bottom-right-radius":"0", "border-bottom-left-radius":"0"});
+  }
+});//@ sourceURL=pen.js
+</script>
+</div><!--.wrapper-->
+</body>
+</html>

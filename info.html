@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<META HTTP-EQUIV="EXPIRES" CONTENT="Sun, 01 Jan 2006 12:00:01 GMT">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<meta charset="utf-8">
+<title>Particle Adventure - Information</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"  />
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery1.min.js"></script>
+<script src="js/accord1.js" type="text/javascript"></script>
+
+
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.4.2.min.js"></script>
+<link rel="stylesheet" href="css/accord1.css" type="text/css" media="screen">
+<script type="text/javascript">
+<!--
+function toggle(id) {
+var e = document.getElementById(id);
+if(e.style.display == 'none')
+e.style.display = 'block';
+else
+e.style.display = 'none';
+}
+//-->
+</script>
+<script language="JavaScript">
+function setVisibility(id) {
+if(document.getElementById('bt1').value=='Hide Layer'){
+document.getElementById('bt1').value = 'Show Layer';
+document.getElementById(id).style.display = 'none';
+}else{
+document.getElementById('bt1').value = 'Hide Layer';
+document.getElementById(id).style.display = 'inline';
+}
+}
+</script>
+</head>
+<body>
+   <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="images/banner-2.jpg" alt="Particle Adventure" /></a>
+        </div>
+        <button id="show" style="display:block; color:#C00; border:1px solid #900;">Menu <span style="display:none;"><img src="images/arrow-up.png" width="15" height="10"></span> <span><img src="images/arrow-down.png" width="15" height="10"></span></button>
+        <div class="clear"></div>
+    </div>
+    <div class="nav">
+<aside class="accordion">
+	<h1>Information</h1><!-- SECTION 1 -->
+	<div class="opened-up">
+		<a onclick="var ref = window.open('http://www.cpepphysics.org/particles.html', '_system');">Charts/Posters, Books, etc.</a>
+        <a onclick="var ref = window.open('http://www.particleadventure.org/other/education/index.html', '_system');">Classroom Activities</a>
+        <a onclick="var ref = window.open('http://www.particleadventure.org/other/charm_book.html', '_system');">Book: The Charm of Strange Quarks</a>
+        <a onclick="var ref = window.open('http://www.particleadventure.org/history-universe.html', '_system');">History of the Universe Chart</a>
+        <a onclick="var ref = window.open('http://www.particleadventure.org/other/history/', '_system');">Particle History &amp; Summary</a>
+    	<a onclick="var ref = window.open('http://www.cpepphysics.org', '_system');">More contemporary physics at CPEPPhysics.org</a>
+        <a onclick="var ref = window.open('http://www.quarked.org/', '_system');">Quarked! -- For Ages 7-12</a>
+   
+	</div>
+	<h3><a href="index.html" class="home">Home</a></h3><!-- HOME -->
+	</div>
+</aside>
+     </div><!--End NAV-->
+
+     <div id="sub3">
+		<input type="image" src="images/x.png"id='bt2' name="image" width="24" height="24" onclick="setVisibility('sub3');"; style="float:left;margin-top:-15px;margin-left:-10px;opacity:0.7;filter:alpha(opacity=70); /* For IE8 and earlier */">
+		<script>
+          (function() {
+            var cx = '013164303166807658384:qekswfvibuk';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+	</div><!--#sub3-->
+
+<div class="footer">
+    <p>&copy; 1996-2014 <a href="http://www.particleadventure.org">particleadventure.org</a></p>
+</div>
+    <p class="author"></p>
+<script type="text/javascript">
+	$('.nav').show();
+	$('#show').click(function (){
+		$(".nav").toggle();
+		$("span").toggle();
+	});
+</script>
+<script src="js/jquery1.min.js"></script>
+<script  src="js/jquery2.min.js" style='display: none;'>var __links = document.querySelectorAll('a');function __linkClick(e) { parent.window.postMessage(this.href, '*');} ;for (var i = 0, l = __links.length; i < l; i++) {if ( __links[i].getAttribute('target') == '_blank' ) { __links[i].addEventListener('click', __linkClick, false);}}</script>
+
+<script>var headers = ["H1","H2","H3","H4","H5","H6"];
+
+$(".accordion").click(function(e) {
+  var target = e.target,
+      name = target.nodeName.toUpperCase();
+  
+  if($.inArray(name,headers) > -1) {
+    var subItem = $(target).next();
+    
+    //slideUp all elements (except target) at current depth or greater
+    var depth = $(subItem).parents().length;
+    var allAtDepth = $(".accordion p, .accordion div").filter(function() {
+      if($(this).parents().length >= depth && this !== subItem.get(0)) {
+        return true; 
+      }
+    });
+    $(allAtDepth).slideUp("fast");
+    
+    //slideToggle target content and adjust bottom border if necessary
+    subItem.slideToggle("fast",function() {
+        $(".accordion :visible:last").css("border-radius","0 0 10px 10px");
+    });
+    $(target).css({"border-bottom-right-radius":"0", "border-bottom-left-radius":"0"});
+  }
+});//@ sourceURL=pen.js
+</script>
+
+
+
+</body>

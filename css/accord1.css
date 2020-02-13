@@ -1,0 +1,129 @@
+* {
+  margin: 0; padding: 0;
+}
+body {
+  font-size: 100%;
+}
+.accordion h3{
+	padding-top:0px; padding-bottom:0px; padding-left:0px;
+	margin-top:0px; margin-top:0px;
+    text-align:left;
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+    color:#FFF; 
+    background:#0070c9;
+    text-decoration:none;
+    border-bottom:1px solid #ccc; 
+    outline:none;
+	display:block;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+}
+.accordion h3:last-of-type {
+  border-radius: 0 0 10px 10px;
+}
+
+.home a:hover {
+	background:none;
+	border:0px;
+}
+.accordion h3 a {
+	border-bottom:0px; color:#fff; background-color:transparent;
+	padding-top:10px; padding-bottom:10px; 
+}
+.accordion h3 a:hover {
+	border-bottom:0px; color:#fff; background-color:transparent;
+	padding-top:10px; padding-bottom:10px; 
+}
+.accordion {
+  width: 100%;
+  margin: 10px auto;
+}
+.accordion h1, h2, h3, h4 {
+  cursor: pointer;
+}
+.accordion h2, h3, h4 {
+  font-family:Arial, Helvetica, sans-serif;
+}
+.accordion h1 {
+  padding-top:15px; padding-bottom:15px; padding-left:10px;
+	margin-top:0px; margin-top:0px;
+    text-align:left;
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+    color:#FFF; 
+    background:#0070c9;
+    text-decoration:none;
+    border-bottom:1px dotted #1abc9c; 
+    outline:none;
+	display:block;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+}
+.accordion h1:hover {
+  color: #0CF;
+}
+.accordion h1:first-child {
+  border-radius: 10px 10px 0 0;
+}
+/*.accordion h1:last-of-type {
+  border-radius: 0 0 10px 10px;
+}*/
+.accordion h1:not(:last-of-type) {
+  border-bottom: 1px dotted #1abc9c;
+}
+.accordion div, .accordion p {
+  display: none;
+   border-bottom: 1px dotted #000;
+}
+.accordion h2 {
+  padding-top:15px; padding-bottom:15px; padding-left:10px;
+  background-color: #79b1fd;
+  border-bottom: 1px solid #9CF;
+  font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+  color: #333;
+}
+.accordion h2:hover {
+  background-color: #06F;
+}
+.accordion h3 {
+  padding: 5px 10px;
+  background-color: #0070c9;
+  font-size: .9rem;
+  color: #ddd; 
+}
+.accordion h3:hover {
+ 
+} 
+.accordion h4 {
+  padding: 5px 35px;
+  background-color: #ffc25a;
+  font-size: .9rem;
+  color: #af720a; 
+}
+.accordion h4:hover {
+  background-color: #e0b040;
+}
+.accordion a {
+  border-bottom: 1px dotted #ccc;
+  padding-top:15px; padding-bottom:15px; 
+}
+.accordion a:hover {
+  border-bottom: 1px dotted #fff;
+ background-color:#CDF6FA;
+}
+.accordion p {
+  padding-top:0px; padding-bottom:0px; padding-left:10px;
+  background-color: #fff;
+  ffont-family:Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.3rem;
+  
+}
+.accordion .opened-up {
+  display: block;
+}

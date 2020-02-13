@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html>
+<META HTTP-EQUIV="EXPIRES" CONTENT="Sun, 01 Jan 2006 12:00:01 GMT">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<meta charset="utf-8">
+<title>Particle Adventure - Mass and Energy</title>
+<link href="../css/style-new.css" rel="stylesheet" type="text/css"  />
+<script language="JavaScript">
+function setVisibility(id) {
+if(document.getElementById('bt1').value=='Hide Layer'){
+document.getElementById('bt1').value = 'Show Layer';
+document.getElementById(id).style.display = 'none';
+}else{
+document.getElementById('bt1').value = 'Hide Layer';
+document.getElementById(id).style.display = 'inline';
+}
+}
+</script>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="jquery1.min.js"></script>
+<script src="accord1.js" type="text/javascript"></script>
+<link rel="stylesheet" href="accord1.css" type="text/css" media="screen">
+<script type="text/javascript" src="../modal/lib/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../modal/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="../modal/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+
+<!--<link href="../css/accordion.css" rel="stylesheet" type="text/css"  />-->
+
+
+<script type="text/javascript">
+<!--
+function toggle(id) {
+var e = document.getElementById(id);
+if(e.style.display == 'none')
+e.style.display = 'block';
+else
+e.style.display = 'none';
+}
+//-->
+</script>
+<script type="text/javascript">
+function openpopup(popurl){
+var winpops=window.open(popurl,"","width=568,height=300,status,scrollbars")
+}
+</script>
+</head>
+<body>
+
+<div id="wrapper">    
+   <div class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/banner-2.jpg" alt="Particle Adventure" /></a>
+        </div> 
+        <!--<input type="image" src="../images/search.gif"id='bt1' name="image" width="29" height="28" onclick="setVisibility('sub3');"; style="margin-top:6px;margin-left:5px;opacity:0.6;filter:alpha(opacity=60); /* For IE8 and earlier */">-->
+<button id="show" style="display:block; color:#C00; border:1px solid #900;">Menu <span><img src="../images/arrow-up.png" width="15" height="10"></span> <span style="display:none;"><img src="../images/arrow-down.png" width="15" height="10"></span></button>
+        <div class="clear"></div>
+    </div>
+    <div class="nav">
+    
+    
+
+<aside class="accordion">
+	<h1>How Do We Know Any of This?</h1><!-- SECTION 1 -->
+	<div>
+		<a href="exp_start.html">Testing a Theory</a>
+        <a href="atom_search.html">Searching for the Atom's Structure</a>
+        <a href="atom_search-1.html">Searching for the Atom's Structure 2</a>
+        <a href="rutherfords_result.html">Rutherford's Result</a>
+        <a href="rutherfords_analysis.html">Rutherford's Analysis</a>
+        <a href="how_to_exp.html">How physicists Experiment</a>
+        <a href="deflected.html">Deflected Probe</a>
+	</div>
+	<h1>How Do We Detect What's Happening?</h1><!-- SECTION 2 -->
+	<div>
+		<h2>Detecting the World</h2>
+		<p>
+        <a href="detect_world.html">Detecting the World </a>
+        <a href="detect_world-1.html">Detecting the World 2</a>
+        <a href="better_micro.html">A Better Microscope </a>
+        <a href="better_micro-1.html">A Better Microscope 2</a>                
+        </p>
+  
+		<h2>Wavelength</h2>
+		<p>
+        <a href="cave.html">Wavelength - The Cave </a>
+        <a href="cave-1.html">Wavelength - The Cave 2</a>
+        <a href="cave-2.html">Wavelength - The Cave 3</a>
+        <a href="cave-3.html">Wavelength - The Cave 4</a>
+        <a href="moral.html">Wavelength - The Moral </a>
+        <a href="moral-1.html">Wavelength - The Moral 2</a>
+        <a href="moral-2.html">Wavelength - The Moral 3</a>
+        </p>
+    
+		<h2>Wavelength  Resolution Explained</h2>
+		<p>
+        <a href="wave_res.html">Wavelength &amp; Resolution Explained </a></li>
+        <a href="wave_res-1.html">Wavelength &amp; Resolution Explained 2</a></li>
+        <a href="tool.html">The Physicists Tool: The Accelerator</a></li>
+        <a href="tool-1.html">The Physicists Tool: The Accelerator 2</a></li>
+        </p>
+      
+		<h2>Waves &amp; Particles</h2>
+		<p>
+        <a href="waves.html">Waves and Particles</a>
+        <a href="waves-1.html">Waves and Particles 2</a>
+        <a href="waves-2.html">Waves and Particles 3</a>
+        <a href="meterstick.html">The World's Meterstick</a>
+        <a href="mass_and_energy.html">Mass &amp; Energy</a>
+        <a href="collision.html">Energy-Mass Conversion</a>
+        </p>
+	</div>
+	<h1>How Do We Experiment With Tiny Particles?</h1><!-- SECTION 3 -->
+	<div>
+		<h2>Accelerators</h2>
+		<p>
+        <a href="accel.html">Accelerators</a>
+        <a href="get_part.html">How to Obtain Particles to Accelerate </a>
+        <a href="accel_particles.html">Accelerating Particles</a>
+        <a href="accel_ani.html">Accelerating Particles: Animation</a>
+        <a href="accel_design.html">Accelerator Design</a>
+        <a href="accel_design-1.html">Accelerator Design 2</a>
+        </p>
+  
+		<h2>Fixed Target Experiments</h2>
+		<p>
+        <a href="fixed_target.html">Fixed Target Experiments</a>
+        <a href="fixed_target-1.html">Fixed Target Experiments 2</a>
+        </p>
+    
+		<h2>Colliding Beam Experiments</h2>
+		<p>
+        <a href="colliding_beam.html">Colliding Beam Experiment</a>
+        <a href="lin_circ.html">A Linear or Circular Accelerator?</a>
+        <a href="lin_circ-1.html">A Linear or Circular Accelerator? 2</a>
+        <a href="circle.html">What Makes Particles Go in a Circle?</a>
+        <a href="accel_adv.html">Advantages of Accelerator Design</a>
+        <a href="accel_adv-1.html">Advantages of Accelerator Design 2</a>
+        </p>
+      
+		<h2>Major Accelerators, Events, Detectors</h2>
+		<p>
+        <a href="variation.html">Major Accelerators</a>
+        <a href="variation-1.html">Major Accelerators 2</a>
+        <a href="event.html">The Event</a>
+        <a href="detectors.html">Detectors</a>
+        <a href="shape_detector.html">Detector Shapes</a>
+        </p>
+	</div>
+    <h1>How Do We Interpret Our Data?</h1><!-- SECTION 3 -->
+	<div>
+		<h2>Modern Detectors</h2>
+		<p>
+        <a href="modern_detect.html">Modern Detectors</a>
+        <a href="modern_detect-1.html">Modern Detectors 2</a>
+        <a href="component_detector.html">Typical Detector Components</a>
+        <a href="component_detector-1.html">Typical Detector Components 2</a>
+        <a href="component_detector-2.html">Typical Detector Components 3</a>
+        <a href="measure.html">Measuring Charge &amp; Momentum</a>
+        <a href="end_view.html">Detector Cross Section</a>
+        </p>
+  
+		<h2>Quizes</h2>
+		<p>
+        <a href="quiz_track.html">Quiz - Particle Tracks</a>
+        <a href="quiz_track-1.html">Quiz - Particle Tracks 2</a>
+        <a href="quiz_track-2.html">Quiz - Particle Tracks 3</a>
+        <a href="quiz_track-3.html">Quiz - Particle Tracks 4</a>
+        </p>
+        
+        <h2>Computer Reconstruction</h2>
+		<p>
+        <a href="computer.html">The Computer Reconstruction</a>
+        <a href="comp_qg.html">A Quark/Gluon Event</a>
+        </p>
+	</div>	
+	<h3><a href="../index.html" class="home">Home</a></h3><!-- HOME -->
+</aside>
+     </div><!--End NAV-->
+     
+     
+     <div id="sub3">
+		<input type="image" src="../images/x.png"id='bt2' name="image" width="24" height="24" onclick="setVisibility('sub3');"; style="float:left;margin-top:-15px;margin-left:-10px;opacity:0.7;filter:alpha(opacity=70); /* For IE8 and earlier */">
+		<script>
+          (function() {
+            var cx = '013164303166807658384:qekswfvibuk';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+	</div><!--#sub3-->
+    <div class="content">
+      <div class="blog">
+        <div class="blog-content">
+<div align="center"><img src="../images/mass-energy.gif" width="100%"></div>
+<p>
+Quite often, physicists want to study massive, unstable particles that 
+have only a fleeting existence 
+(such as the very massive top quark.) 
+However, all that physicists 
+have around them in the every day world are very 
+low-mass particles. 
+How does one perform this amazing 
+feat of using particles with lesser mass to obtain particles of greater mass?
+<p>
+You know Albert Einstein's famous equation that E=mc<sup>2</sup> where E is the energy,
+ m is the mass, and c is 
+the speed of light. Therefore,
+<div align="center">
+<img width=195 src="../images/einstein_sez.gif" HEIGHT=94>
+</div>
+		
+
+
+        
+        </div>
+              </div>
+      <div class="clear"></div>
+        <div class="clear"></div>
+        <div class="pagination">
+            <ul>
+                <li><a href="meterstick.html"><img src="../images/back-arrow.png" alt=""></a></li>
+                <li class="current"><img src="../images/spacer.gif" width="150" height="1"></li> 
+                <li><a href="collision.html"><img src="../images/forward-arrow.png" alt=""></a></li>
+            </ul>
+      </div>
+  </div>
+<div class="footer">
+    <p>&copy; 1996-2014 <a href="http://www.particleadventure.org">particleadventure.org</a></p>
+</div>
+    <p class="author"></p>
+<script type="text/javascript">
+	$('.nav').hide();
+	$('#show').click(function (){
+		$(".nav").toggle();
+		$("span").toggle();
+	});
+</script>
+<script src="jquery1.min.js"></script>
+<script  src="jquery2.min.js" style='display: none;'>var __links = document.querySelectorAll('a');function __linkClick(e) { parent.window.postMessage(this.href, '*');} ;for (var i = 0, l = __links.length; i < l; i++) {if ( __links[i].getAttribute('target') == '_blank' ) { __links[i].addEventListener('click', __linkClick, false);}}</script>
+
+<script>var headers = ["H1","H2","H3","H4","H5","H6"];
+
+$(".accordion").click(function(e) {
+  var target = e.target,
+      name = target.nodeName.toUpperCase();
+  
+  if($.inArray(name,headers) > -1) {
+    var subItem = $(target).next();
+    
+    //slideUp all elements (except target) at current depth or greater
+    var depth = $(subItem).parents().length;
+    var allAtDepth = $(".accordion p, .accordion div").filter(function() {
+      if($(this).parents().length >= depth && this !== subItem.get(0)) {
+        return true; 
+      }
+    });
+    $(allAtDepth).slideUp("fast");
+    
+    //slideToggle target content and adjust bottom border if necessary
+    subItem.slideToggle("fast",function() {
+        $(".accordion :visible:last").css("border-radius","0 0 10px 10px");
+    });
+    $(target).css({"border-bottom-right-radius":"0", "border-bottom-left-radius":"0"});
+  }
+});//@ sourceURL=pen.js
+</script>
+
+
+
+</div><!--.wrapper-->
+</body>
+</html>

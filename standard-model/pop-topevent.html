@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<META HTTP-EQUIV="EXPIRES" CONTENT="Sun, 01 Jan 2006 12:00:01 GMT">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<head>
+	<title>What's Wrong?</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+	.largetitle {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	font-weight:bold;
+}
+body{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:.9em;
+
+	}
+
+
+	</style>
+    <link href="../css/style-new.css" rel="stylesheet" type="text/css"  />
+<script language="JavaScript">
+function setVisibility(id) {
+if(document.getElementById('bt1').value=='Hide Layer'){
+document.getElementById('bt1').value = 'Show Layer';
+document.getElementById(id).style.display = 'none';
+}else{
+document.getElementById('bt1').value = 'Hide Layer';
+document.getElementById(id).style.display = 'inline';
+}
+}
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+<div class="blog-content">
+	
+	<!--<span class="largetitle">Uncertainty</span>-->
+<p>
+
+
+
+
+        <SCRIPT LANGUAGE = "javascript">
+	eventOne = new Image();
+	eventOne.src = "../images/topevent1.jpg";
+	eventTwo = new Image();
+	eventTwo.src = "../images/topevent2.jpg";
+	eventThree = new Image();
+	eventThree.src = "../images/topevent3.jpg";
+	eventFour = new Image();
+	eventFour.src = "../images/topevent4.jpg";
+	function changeEvent(number) {
+		switch(number) {
+			case 1:
+				document.event.src = eventOne.src;
+				break;
+			case 2:	
+				document.event.src = eventTwo.src;
+				break;
+			case 3:
+				document.event.src = eventThree.src;
+				break;
+			case 4:
+				document.event.src = eventFour.src;
+				break;
+		}
+	}
+</SCRIPT>
+<p>
+The Fermilab accelerator collided a proton with an antiproton inside a detector that
+recorded the tracks of the various products of this collison. A few hundred collisions among trillions 
+gave physicists the evidence for top quark's existence.
+
+<p>
+The <a href="javascript:changeEvent(1);" onMouseOver="self.status='Observed Event';return true">observed event</a> itself appears to 
+be a confusing clutter of various particle paths. A 
+<a href="javascript:changeEvent(2);" onMouseOver="self.status='Computer Analyzed';return true">computer analyzed</a>
+ this event to show clusters of mesons, 
+a positron, and an inferred neutrino. Looking at this, <a href="javascript:changeEvent(3);" onMouseOver="self.status='Deduction';return true">physicists
+were able to deduce</a> that a top quark decayed into a W particle and a <a href="javascript:changeEvent(4);" onMouseOver="self.status='B Quark';return true">b&nbsp;quark</a>, even though these decayed before we could observe them.
+<p class="small">
+<div align="center">
+
+(The links on this page switch between different images of the event
+interpretation.)<br />
+<img src="../images/topevent1.jpg" align="center" name="event" width="200">
+</div>
+
+
+
+
+
+
+
+
+	</div>
+</div><!--.wrapper-->
+</body>
+</html>	

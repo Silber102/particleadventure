@@ -1,0 +1,182 @@
+<STYLE TYPE-"type/css">
+ 	/* The first element is junk, for some very strange reason. */
+ 	 	P { }
+ 
+	P { 
+		font-family: Arial, Helvetica, sans-serif;
+  		font-size: 12pt; 
+  	  }
+  	
+     .normal { 
+		font-family: Arial, Helvetica, sans-serif;
+  		font-size: 12pt; 
+  	  }
+  	  
+    .large {
+   		font-size: 16pt; 
+   	}
+   	
+   	.small {
+   		font-size: 10pt; 
+   	}
+   	
+   	/* Special news tag */
+   	.news {
+   		color: #FFE3AF; 
+   		font-size: 18pt; 
+   		font-weight: bold;
+   	}
+   
+   	/* Special news tag */
+   	.white {
+   		color: #FFFFFF; 
+   	}
+   	   
+     /* Special news tag */
+   	.newstitle {
+   		color: #FFE3AF;
+   		/* color: #007766; */
+   		font-size: 12pt; 
+   		font-weight: bold;
+   	}
+   		
+   	/* Special news tag */
+   	.newstext {
+   		color: #FFFFFF;
+   		/* color: #007766; */
+   		font-size: 10pt; 
+   	}
+   	
+   	/* Orange hilight color */
+   	.color {
+   		color: #c35617;
+   	}
+
+   	/* Standard color */
+   	.nocolor {
+   		color: black;
+   	}
+   	
+	/* Hilight text that stand out */
+	.hilight {
+		font-weight: bold;
+		color: #151b54;
+	}
+
+	.serifcolor {
+  		font-family: Times, serif;
+		font-weight: bold;
+   	 	color: #c35617;
+  	}
+	   	
+	B {
+		font-weight: bold;
+		color: #151b54;
+	}	   	
+	   	
+	DL {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	   	
+	STRONG {
+		color: #151b54;
+	}
+	
+	UL {
+		font-family: Arial, Helvetica, sans-serif;
+  		font-size: 12pt; 
+	}
+
+	OL {
+		font-family: Arial, Helvetica, sans-serif;
+  		font-size: 12pt; 
+	}	
+
+	BLOCKQUOTE {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12pt;
+		}
+
+  	H1 {
+  		font-family:  Helvetica, Arial, sans-serif;
+   	 	font-size: 28pt;
+   		font-weight: normal;
+  	}
+  	
+  	H1.serif {
+  		font-family:  Times, serif;
+   	 	font-size: 28pt;
+   	 	font-weight: bold;
+  	}
+  	
+    H1.serifcolor {
+  		font-family: Times, serif;
+   	 	font-size: 28pt;
+   	 	font-weight: bold;
+   	 	color: #c35617;
+  	}
+  	
+  	H2 {
+  		font-family: Helvetica, Arial, sans-serif;
+   	 	font-size: 22pt;
+   		font-weight: normal;
+  	}
+  	
+  	H2.serif {
+  		font-family: Times, serif;
+   	 	font-size: 23pt;
+   	 	font-weight: bold;
+  	}
+  	
+  	H2.serifcolor {
+  		font-family: Times, serif;
+   	 	font-size: 23pt;
+   	 	font-weight: bold;
+   	 	color: #c35617;
+  	}
+  	
+
+ 	H3 {
+  		font-family: Helvetica, Arial, sans-serif;
+   	 	font-size: 18pt;
+   		font-weight: normal;
+  	}
+  	
+  	H3.serif {
+  		font-family: Times, serif;
+   	 	font-size: 20pt;
+   	 	font-weight: bold;
+  	}
+  	
+    H3.serifcolor {
+  		font-family: Times, serif;
+   	 	font-size: 20pt;
+   	 	font-weight: bold;
+   	 	color: #c35617;
+  	}
+  	
+  	H4 {
+  		font-family: Helvetica, Arial, sans-serif;
+	}
+  	
+  	PRE {
+    	font-family: monospace;
+  	}
+  
+  	IMG {
+  		border: 0;
+  	}        
+  	
+  	BODY { 
+ 		background: white;
+ 		color: black;
+ 		font-family: Helvetic, Arial, sans-serif;
+ 	}
+ 	
+
+ 	
+  	A:link { color: #7e3117 }          /* unvisited link */
+    A:visited { color: #2b3856 }        /* visited links */
+    A:active { color: #800517 }        /* active links */
+    
+</STYLE> 
